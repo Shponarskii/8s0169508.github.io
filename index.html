@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Задание 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container-fluid p-3 mb-2 bg-primary text-white">
+        <div class="row">
+            <header id="header">
+                <div class = "col-12 mx-lg-auto mx-md-auto mx-sm-auto mx-xl-auto" id="ab">
+                    <img src = "https://assets.turbologo.ru/blog/ru/2018/10/18170754/wordpress.png" class = "header_image" alt = "Логотип сайта" width="100">
+                    <a href="" class = "navbar-brand text-light align-middle">  Мой сайт</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="col-12 mx-sm-auto container-fluid p-3 mb-2 bg-dark text-white mt-3" id="ad">
+
+        <h1 id="d">Калькулятор 1</h1>
+        <form>
+            <input id="cos" class="form-control" placeholder="Введите стоимость товара">
+            <input id="kol-vo" class="form-control" placeholder="Введите количество товара">
+            <button id="b-calc" onclick="return calculator1();" type="button">Рассчитать</button>
+        </form>
+        <div id="res"></div>
+
+    </div>
+
+
+    <main>
+        <h2>Feedback form</h2>
+    </main>
+    
+    <div class="text-center" id="popup">
+        <form action="https://formcarry.com/s/cB6SsjsbV" class="mx-auto text-dark mt-sm-2 p-2 border rounded mx-auto border-light" method="POST">
+            <label class="form-check-label" for="name">Name:</label>
+            <input class="form-control save-to-storage" id="name" name="name" required type="text"> <br>
+            
+            
+            <label class="form-check-label" for="email">E-mail:</label>
+            <input class="form-control save-to-storage" id="email" name="email" required type="email"> <br>
+            
+            <label class="form-check-label" for="message">Message:</label> <br>
+            <textarea class="form-control save-to-storage" id="message" name="message" required rows="8"></textarea> <br>
+            
+            <input class="form-check-input" id="checkbox" name="agreement" required type="checkbox" value="agreed">
+            <label class="form-check-label" for="checkbox">Agree</label> <br>
+            
+            <button class="btn btn-outline-primary" id="formSubmit" type="button">Send</button>
+            <div id="result"></div>
+        </form>
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
